@@ -1,0 +1,9 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+jobs:
+  call_build:
+    uses: alxss01-reusable/reusable-workflow/.github/workflows/java-build.yaml@latest
+    with:
+      name: "Alex"
