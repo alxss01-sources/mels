@@ -4,6 +4,6 @@ on:
 
 jobs:
   call_build:
-    uses: alxss01-reusable/reusable-workflow/.github/workflows/java-build.yaml@latest
+    uses: alxss01-reusable/reusable-workflow/.github/workflows/java-build.yaml@main
     with:
       name: "Alex"
