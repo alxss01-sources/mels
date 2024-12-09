@@ -7,3 +7,4 @@ jobs:
     uses: alxss01-reusable/reusable-workflow/.github/workflows/java-build.yaml@main
     with:
       name: "Alex"
+    secrets: inherit
