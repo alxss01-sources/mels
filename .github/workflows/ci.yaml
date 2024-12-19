@@ -4,7 +4,7 @@ on:
 
 jobs:
   call_build:
-    uses: alxss01-reusable/reusable-workflow/.github/workflows/java-build.yaml@main
+    uses: alxss01-sources/reusable-workflow/.github/workflows/java-build.yaml@main
     with:
       name: "Alex"
     secrets: inherit

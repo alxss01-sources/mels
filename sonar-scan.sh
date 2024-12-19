@@ -4,7 +4,7 @@ projectVersion=$(mvn -f pom.xml help:evaluate -Dexpression=project.version -q -D
 projectName=$(mvn -f pom.xml help:evaluate -Dexpression=project.artifactId -q -DforceStdout)
 projetcKey=$(mvn -f pom.xml help:evaluate -Dexpression=project.groupId -q -DforceStdout)
 sonarUrl="http://localhost:9000"
-token="squ_48f1f52efe8a93bce5b482325f3949bfe870333a"
+token="squ_a57f2304d5afb4ead9c6fced9d8859a68505c58d"
 
 
 mvn sonar:sonar -Dsonar.projectName=$projectName \
