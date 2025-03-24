@@ -1,6 +1,6 @@
 name: Deploy
 on:
-  repository_dispach:
+  workflow_dispatch:
     inputs:
       name: 
       required: true
