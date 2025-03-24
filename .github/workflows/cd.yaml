@@ -1,15 +1,14 @@
-name: Deploy
 on:
   workflow_dispatch:
     inputs:
-      name: 
-      required: true
-      type: string
+      name:
+        required: true
+        type: string
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: ${{ inputs.perform_deploy }}
     steps:
-      - name: Imprime nome
-        run: echo "Nome ${{ inputs.name }}"
-
+      - name: Imprime Nome
+        run: echo "Nome do cidadão: ${{ inputs.name }}"
