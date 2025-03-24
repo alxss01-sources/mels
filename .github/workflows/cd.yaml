@@ -1,14 +1,15 @@
 on:
   workflow_dispatch:
     inputs:
-      name:
+      name_user:
         required: true
         type: string
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: ${{ inputs.perform_deploy }}
     steps:
       - name: Imprime Nome
-        run: echo "Nome do cidadão: ${{ inputs.name }}"
+        run: | 
+          echo "Nome do cidadão: ${{ inputs.name_user }}"
+          echo "Status do Job: ${{ job.status }}"
